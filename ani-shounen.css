@@ -1,0 +1,474 @@
+body{
+    text-align: center;
+    background-image: linear-gradient(to bottom, #733E1F 15%, #A60303 30%, #494949 45%, #fffb00 65%, #ee6b00 75%, #4F5951 85%);
+    color: white;
+    max-height: fit-content;
+    font-family: Arial;
+}
+*{
+    margin-bottom: 0;
+}
+/*FONTE Shingeki no Kyojin*/
+@font-face {
+    font-family: Kaisg;
+    src: url(./fONTS/KAISG___.TTF);
+}
+@font-face{
+    font-family: Ryumin;
+    src: url(./Fonts/A-OTF\ Ryumin\ Pro\ H-KL.otf)
+}
+/*FONTE Death Note*/
+@font-face{
+    font-family: "death font";
+    src: url(./foNTS/DEATH_FONT.TTF)
+}
+@font-face {
+    font-family: Masashi;
+    src: url(./fonts/A-OTF\ Musashino\ Std\ Regular.otf);
+}
+/*FONTE Fullmetal Alchemist*/
+@font-face {
+    font-family: Staubach;
+    src: url(./Fonts/Staubach.ttf);
+}
+/*FONTE My Hero Academia*/
+@font-face {
+    font-family: Commando;
+    src: url(./fONTS/commando.ttf);
+}
+@font-face {
+    font-family: Nikkuyou;
+    src: url(./Fonts/NikkyouSans-mLKax.ttf);
+}
+
+/*FONTE Naruto*/
+@font-face {
+    font-family: Njnaruto;
+    src: url(./fonts/njnaruto.ttf);
+}
+@font-face {
+    font-family: Hangshan;
+    src: url(./Fonts/tŽR–Ñ•MƒtƒHƒ“ƒgs‘.ttf);
+}
+/*FONTE Spy x Family*/
+@font-face {
+    font-family: Oswald;
+    src: url(./Fonts/Oswald-Regular.ttf);
+}
+
+/*Fazer um botao com dropdow de baixo de cada anime 
+com descrição dos personagem que aparecen no EP*/
+
+.bt-drop{
+    background-color: #11aa77;
+    color: #ffffff;
+    padding: 14px;
+    border: none;
+    cursor: pointer;
+}
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+
+h1{
+    color: black;
+}
+.oq-eh{
+    color: #000;
+    text-align: left;
+    padding-bottom: 5%;
+}
+.anims{
+    margin: 0px;
+    position: relative;
+    width: 1100px;
+    height: 4080px;
+    right: -400px;
+    top: -795px;
+}
+.mn-esq{
+    text-align: left;
+    height:750px;
+    width: 350px;
+    position: relative;
+    top: -22.5px;
+}
+
+/*Botão Ataque dos titans*/
+
+
+
+
+
+/*separação por segurança*/
+
+.tx-aot{
+    display:block;
+    width: 350px;
+    height: 50px;
+    line-height: 100%;
+    font-size: 300%;
+    font-family: Kaisg;
+    text-decoration: none;
+    color: #ffffff;
+    background-image: url(./Imagens/aot.png);
+    border-style: none;
+    letter-spacing: 2px;
+    text-align: center;
+    position: relative;
+    transition: all .35s;
+}
+.jp-aot{
+    display: none;
+}
+.tx-aot .bt-aot{
+    position: relative;
+    z-index: 2;
+}
+.tx-aot:hover .bt-aot{
+    display: none;
+}
+.tx-aot:after{
+    position: absolute;
+    content:"";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-image: url(./Imagens/aot\ inver.png);
+    transition: all .35s;
+}
+.tx-aot:hover .jp-aot{
+    display: inline;
+    position: relative;
+    color:#ffffff;
+    font-family: Ryumin;
+    line-height: 100%;
+    z-index: 3;
+}
+.tx-aot:hover:after{
+    width: 100%;
+}
+/*separação por segurança*/
+
+/*Botão Death Note*/
+.tx-note{
+    display: block;
+    width: 350px;
+    height: 50px;
+    line-height: 100%;
+    font-size: 300%;
+    font-family: death font;
+    text-decoration: none;
+    color: white;
+    background-image: url(./Imagens/death.png);
+    border-style: none;
+    letter-spacing: 2px;
+    text-align: center;
+    position: relative;
+    transition: all .35s;
+    /*background-position-x: 50%;
+    background-position-y: 82.5%;
+    background-size: 550px;*/
+    
+    /*Font conf.*/
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color:#400101;
+}
+.jp-note{
+    display: none;
+}
+.tx-note .bt-note{
+    position: relative;
+    z-index: 2;
+}
+.tx-note:hover .bt-note{
+    display: none;
+}
+.tx-note:after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-image: url(./Imagens/death\ inver.png);
+    transition: all .35s;
+}
+.tx-note:hover .jp-note{
+    display: inline;
+    position: relative;
+    color: #ffffff;
+    letter-spacing: -10px;
+    font-family: Masashi;
+    line-height: 100%;
+    z-index: 1;
+}
+.tx-note:hover:after{
+    width: 100%;
+}
+
+.note h1{
+    font-family: death font;
+}
+
+/*Botão Fullmetal*/
+.tx-fa{
+    display: block;
+    width: 350px;
+    height: 50px;
+    line-height: 150%;
+    font-size: 200%;
+    font-family: Staubach;
+    text-decoration: none;
+    color: #000;
+    background-image: url(./Imagens/fm.png);
+    border-style: none;
+    letter-spacing: 1px;
+    text-align: center;
+    position: relative;
+    transition: all .35s;
+    /*background-size: 78%;
+    background-position-x: center;
+    background-position-y: -12.5px;*/
+
+    /*Font conf.*/
+
+}
+.jp-fa{
+    display: none;
+}
+.tx-fa .bt-fa{
+    position: relative;
+    z-index: 2;
+}
+.tx-fa:hover .bt-fa{
+    display: none;
+}
+.tx-fa:after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-image: url(./Imagens/fm\ inver.png);
+    transition: all .35s;
+}
+.tx-fa:hover .jp-fa{
+    display: inline;
+    position: relative;
+    color: #000;
+    font-family: Ryumin;
+    font-size: 125%;
+    line-height: 100%;
+    z-index: 1;
+}
+.tx-fa:hover:after{
+    width: 100%;
+}
+
+.metal h1{
+    font-family: Staubach;
+}
+
+
+/*Botão My hero academia*/
+.tx-mha{
+    display: block;
+    width: 350px;
+    height: 50px;
+    line-height: 150%;
+    font-size: 225%;
+    font-family: Commando;
+    text-decoration: none;
+    color: white;
+    background-image: url(./Imagens/mha.png);
+    border-style: none;
+    letter-spacing: 1px;
+    text-align: center;
+    position: relative;
+    transition: all .35s;
+    /*Font conf.*/
+    -webkit-text-stroke-width:1.5px;
+    -webkit-text-stroke-color: #000;
+}
+.jp-mha{
+    display: none;
+}
+.tx-mha .bt-mha{
+    position: relative;
+    z-index: 2;
+}
+.tx-mha:hover .bt-mha{
+    display: none;
+}
+.tx-mha:after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-image: url(./imagens/mha\ inver.png);
+    transition: all .35s;
+}
+.tx-mha:hover .jp-mha{
+    display: inline;
+    position: relative;
+    color: #ffffff;
+    font-family: Nikkuyou;
+    font-size: 85%;
+    line-height: 100%;
+    z-index: 1;
+}
+.tx-mha:hover:after{
+    width: 100%;
+}
+
+.mha h1{
+    font-family: Commando;
+}    
+.hero, .death, .titan, .sask, .full{
+    padding-bottom: 2.5%;
+}    
+
+
+/*Botão Naruto*/
+.tx-naru{
+    display: block;
+    width:350px;
+    height: 50px;
+    line-height: 150%;
+    font-size: 225%;
+    font-family: Njnaruto;
+    text-decoration: none;
+    color: #F98600;
+    background-image: url(./Imagens/naru.png);
+    border-style: none;
+    letter-spacing: 1px;
+    text-align: center;
+    position: relative;
+    transition: all .35s;
+
+    /*tags inutilizadas mas fica de referencia
+    background-size: 90%;
+    background-position-x: center;
+    background-position-y: -20px;*/
+
+    /*Font conf.*/
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #011140;
+}
+.jp-naru{
+    display: none;
+}
+.tx-naru{
+    position: relative;
+    z-index: 2;
+}
+.tx-naru:hover .bt-naru{
+    display: none;
+}
+.tx-naru:after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-image: url(./Imagens/naru\ inver.png);
+    transition: all .35s;
+}
+.tx-naru:hover .jp-naru{
+    display: inline;
+    position: relative;
+    color: #F98600;
+    font-size: 150%;
+    font-family: Hangshan;
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: #011140;
+    line-height: 100%;
+    z-index: 1;
+}
+.tx-naru:hover:after{
+    width: 100%;
+}
+
+.naru h1{
+    font-family: Njnaruto;
+}
+
+/*Botão Spy X Family*/
+.tx-spy{
+    display: block;
+    width: 350px;
+    height: 50px;
+    line-height: 120%;
+    font-size: 250%;
+    font-family: Oswald;
+    text-decoration: none;
+    color: #000;
+    background-image: url(./Imagens/spy.png);
+    border-style: none;
+    letter-spacing: 1px;
+    text-align: center;
+    position: relative;
+    transition: all .35s;
+    margin-bottom: 2.5%;
+}
+.jp-spy{
+    display: none;
+}
+.tx-spy .bt-spy{
+    position: relative;
+    z-index: 2;
+}
+.tx-spy:hover .bt-spy{
+    display: none;
+}
+.tx-spy:after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-image: url(./Imagens/spy\ inver.png);
+    transition: all .35s;
+}
+.tx-spy:hover .jp-spy{
+    display: inline;
+    position: relative;
+    font-family: Oswald;
+    line-height: 125%;
+    color: #000;
+    z-index: 1;
+}
+.tx-spy:hover:after{
+    width: 100%;
+}
+.spy h1{
+    font-family: Oswald 
+}
+
+
+.anims{
+    margin: 0px;
+    position: relative;
+    width: 1100px;
+    height: 4080px;
+    right: -400px;
+    top: -795px;
+}
+.mha, .dn, .aot, .naru, .metal{
+    padding-bottom: 5%;
+}
+.sinop{
+    color:black;
+    left: 11.15%;
+    position: relative;
+    width:854px;
+    text-align: justify;
+}
