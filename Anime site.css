@@ -1,0 +1,157 @@
+body{
+    text-align: center;
+    background-color: #4b4b4b;
+    color: white;
+}
+main{
+    background-color: #212121;
+    margin: 0 auto;
+    width: 800px;
+}
+
+h1{
+    padding-left: 25px;
+    text-align: left;
+}
+h3{
+    text-align: center;
+}
+.bt-shonen{
+    background-image: url(https://d17lbu6bbzbdc8.cloudfront.net/wp-content/uploads/2020/05/10214456/Shonen-Jump-animes-mangas.jpg);
+    background-position: center;
+    text-align: center;
+    border-radius: 5px;
+    width: 750px;
+    height: 50px;
+    border-style:solid;
+    border-color:#000;
+}
+.bt-shonen:hover{
+    opacity: 0.75;
+
+}
+
+.bt-ron{
+    background-image: url(https://imgmedia.larepublica.pe/640x377/larepublica/migration/images/2LINMP4A25FM7BPBHBM5STIRZI.webp);
+    background-position: center;
+    text-align: center;
+    border-radius: 5px;
+    width: 750px;
+    height: 50px;
+    border-style: solid;
+    border-color: black;
+}
+.bt-ron:hover{
+    opacity: 0.75;
+}
+
+.bt-com{
+    background-image: url(https://img.quizur.com/f/img5d921188abe4d3.45835213.jpg?lastEdited=1569853866);
+    background-position: center;
+    text-align: center;
+    border-radius: 5px;
+    width: 750px;
+    height: 50px;
+    border-style: solid;
+    border-color: black;
+}
+.bt-com:hover{
+    opacity: 0.75;
+}
+
+.bt-dra{
+    background-image: url(https://www.anime-planet.com/images/anime/tags/drama-204.jpg);
+    background-position: center;
+    text-align: center;
+    border-radius: 5px;
+    width: 750px;
+    height: 50px;
+    border-style: solid;
+    border-color: black;
+}
+.bt-dra:hover{
+    opacity: 0.75;
+}
+
+.bt-sus{
+    background-image: url(https://www.intoxianime.com/wp-content/uploads/2018/05/boku-dake-ga-inai-machi_tNone-tile.jpg);
+    background-position: center;
+    text-align: center;
+    border-radius: 5px;
+    width: 750px;
+    height: 50px;
+    border-style: solid ;
+    border-color: black;
+}
+.bt-sus:hover{
+    opacity: 0.75;
+}
+
+.fds{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+
+.aa{
+    display: block;
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: #333;
+    border: 2px solid #333;
+    letter-spacing: 2px;
+    text-align: center;
+    position: relative;
+    transition: all .35s;
+}
+.jp{
+    display: none;
+}
+.aa .pt{
+    position: relative;
+    z-index: 5;
+}
+.aa:hover .pt{
+    display: none;
+}
+  
+.aa:after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #7c2424 ;
+    transition: all .35s;
+}
+  
+.aa:hover .jp{
+    display: inline;
+    position: relative;
+    color: #ffffff;
+    z-index: 6;
+}
+  
+.aa:hover:after{
+    width: 100%;
+}
+  
+
+/*usar o codigo abaixo como referencia para criar um botão personalizado*/
+
+/*
+.bt-shonen{
+    background: rgb(0, 17, 255);
+    background: linear-gradient(0deg, rgb(10, 131, 6) 0%, rgb(180, 135, 12) 100%);
+}
+  .bt-shonen:hover {
+    background: rgb(106, 197, 21);
+    background: linear-gradient(0deg, rgba(231, 108, 108, 0) 0%, rgba(223, 0, 175, 0) 100%);
+    */
